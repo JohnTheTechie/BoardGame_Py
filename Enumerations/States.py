@@ -1,6 +1,9 @@
 
 
 class PlayerStatus(enumerate):
+    '''
+    enumeration of the possible player status
+    '''
     PStatus_OUT_OF_BOARD = 1
     PStatus_IDLE = 2
     PStatus_DICE_ROLLING = 3
