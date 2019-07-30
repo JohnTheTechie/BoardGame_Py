@@ -12,3 +12,8 @@ class MoveCountStrategy:
         else:
             self.strategyType = type
 
+class SnakePlayerDestCellRetentionPolicy:
+    '''
+    defines the logic used for deciding the final move of the player object
+    '''
+

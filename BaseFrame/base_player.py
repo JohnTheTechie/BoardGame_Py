@@ -8,6 +8,9 @@ class BasePlayer:
         self.status = current_status
         self.remaining_moves = 0
 
+    def setOccupyingCell(self, cell):
+        self.occupying_cell.push
+
     def getStatus(self):
         return self.status
 
@@ -20,3 +23,5 @@ class BasePlayer:
         elif move_count < 0:
             raise InvalidMoveCountUpdateError(move_count, "count cannot be negative")
         #TODO: add movecount strategy clause
+
+
