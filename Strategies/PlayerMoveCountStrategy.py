@@ -1,5 +1,5 @@
 
-from Enumerations.Types import MovementStrategyType as MType
+from Enumerations.Types import MovementCountQueueingStrategyType as MType
 from Error import InvalidMovementStrategyError
 
 class MoveCountStrategy:
