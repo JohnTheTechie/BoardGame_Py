@@ -16,6 +16,9 @@ class BasePlayer:
         self.index, self.counter = self.counter+1, self.counter+1
         logging.info(f"{__name__} | index = {self.index} | player object created")
 
+    def __str__(self):
+        return BasePlayer.__name__+" | index = " + str(self.index) + " | "
+
     def setOccupyingCell(self, cell):
         """
         store the reference to the cell currently occupied by the player
@@ -55,6 +58,8 @@ class BasePlayer:
         elif move_count < 0:
             logging.error(f"{__name__} | index = {self.index} | invalid move count passed - negative moves")
             raise InvalidMoveCountUpdateError(move_count, "count cannot be negative")
-        #TODO: add movecount strategy clause
+        else:
+            self.remaining_moves = move_count
+            logging.error(f"{__name__} | index = {self.index} | move count set to {self.remaining_moves}")
 
 

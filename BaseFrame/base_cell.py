@@ -1,10 +1,9 @@
 
-from Strategies.PlayerMoveCountStrategy import MoveCountStrategy
 import logging
 import Error
 
 
-class BaseCell(MoveCountStrategy):
+class BaseCell:
     '''
     Baseclass for the cell object is defined here
     Bse classs will support to store next and previous cells, branching cell if needed.
